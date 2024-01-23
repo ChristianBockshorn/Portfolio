@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./assets/font/Overpass-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url('./assets/font/Syne-VariableFont_wght.ttf');
+}
