@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
+import { DividerSectionComponent } from './divider-section/divider-section.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,6 +10,10 @@ import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component
   imports: [
     NavbarComponent,
     AboveTheFoldComponent,
+    DividerSectionComponent,
+    AboutMeComponent,
+    
+    
   ],
   templateUrl: './landingPage.component.html',
   styleUrl: './landingPage.component.scss'
