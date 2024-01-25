@@ -1,11 +1,14 @@
 section {
     padding: 30px 100px;
+    margin-top: 200px;
 
     .twoColumns {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: row;
         align-items: start;
+        gap: 45px;
+
 
         >.leftCol {
             display: flex;
@@ -16,6 +19,10 @@ section {
             >.headline {
                 font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
                 margin-bottom: 52px;
+
+                &:hover{
+                    color: #00bc8f;
+                }
             }
 
             >#aboutMeText {
@@ -32,15 +39,17 @@ section {
             display: flex;
             justify-content: flex-end;
             align-items: end;
-            
+
 
             >.imgDiv {
                 >img {
-                    border-radius: 50px;
+                    border-radius: 8px;
                     background: #e0e0e0;
                     box-shadow: 20px 20px 60px #bebebe,
                         -20px -20px 60px #ffffff;
-                    max-width: 70%;
+                    
+                    width: 650px;
+                    
                 }
             }
 

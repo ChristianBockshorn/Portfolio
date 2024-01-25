@@ -23,6 +23,7 @@
   align-items: center;
   gap: 10px;
   border: 4px solid #000;
+  border-radius: 8px;
   box-shadow: 5px 5px 15px #00000026;
   font-family: Overpass;
   font-size: 23px;
@@ -39,7 +40,6 @@
     transform: scaleX(1.2);
   }
 }
-
 
 
 @font-face {
