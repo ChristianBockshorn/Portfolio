@@ -42,6 +42,24 @@
 }
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  #fffcf3; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+
+
+
 @font-face {
   font-family: "Overpass";
   src: url('./assets/font/Overpass-VariableFont_wght.ttf');

@@ -1,0 +1,23 @@
+section {
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 200px;
+
+    >.headline {
+        font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+    }
+
+    p {
+        color: #000;
+        font-family: Overpass;
+        font-size: 23px;
+        
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 492px;
+    }
+}
