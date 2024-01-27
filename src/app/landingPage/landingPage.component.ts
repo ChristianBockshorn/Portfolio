@@ -5,6 +5,7 @@ import { DividerSectionComponent } from './divider-section/divider-section.compo
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -16,7 +17,7 @@ import { PortfolioSectionComponent } from './portfolio-section/portfolio-section
     AboutMeComponent,
     MySkillsComponent,
     PortfolioSectionComponent,
-    
+    ContactFormComponent,
     
   ],
   templateUrl: './landingPage.component.html',

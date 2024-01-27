@@ -1,0 +1,43 @@
+section {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 100px;
+    margin-top: 200px;
+    background-image: url('./../../../assets/img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+
+
+    >.headline {
+        display: flex;
+        align-items: flex-start;
+
+        font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+        color: #fffcf3;
+        background-color: #000;
+        padding-top: 46px;
+    }
+
+    >.formContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+
+        >.formHeader {
+            color: #00bc8f;
+            font-size: 32px;
+        }
+
+        span {
+            color: #fffcf3;
+            background-color: #000;
+            text-decoration: none;
+            font-size: 23px;
+        }
+    }
+}

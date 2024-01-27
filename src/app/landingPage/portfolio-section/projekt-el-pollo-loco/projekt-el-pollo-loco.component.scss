@@ -1,0 +1,60 @@
+section {
+    margin-top: 50px;
+    padding: 30px 100px;
+
+    >.mainContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+
+        >.leftColumn {
+            img {
+                width: 100%;
+                border-radius: 8px;
+                border: 3px solid transparent;
+
+                &:hover {
+                    border: 3px solid black;
+                }
+            }
+        }
+
+        >.rightColumn {
+            display: flex;
+            flex-direction: column;
+
+            >.headline {
+                font-size: clamp(1.8125rem, 1.0625rem + 2.75vw, 3.875rem);
+
+                &:hover {
+                    color: #00bc8f;
+                }
+            }
+
+            .programmingLang {
+                color: #00bc8f;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #000;
+                font-family: Overpass;
+                font-size: 23px;
+                font-weight: 400;
+                line-height: 120%;
+                max-width: 492px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+
+
+
+        }
+    }
+}
