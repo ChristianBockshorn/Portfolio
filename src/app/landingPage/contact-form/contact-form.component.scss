@@ -1,9 +1,10 @@
 section {
     display: flex;
-
+    align-items: start;
     justify-content: center;
     flex-direction: column;
     padding: 30px 100px;
+    
     margin-top: 200px;
     background-image: url('./../../../assets/img/Rectangle.png');
     background-repeat: no-repeat;
@@ -12,32 +13,38 @@ section {
 
 
     >.headline {
-        display: flex;
-        align-items: flex-start;
-
         font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
         color: #fffcf3;
         background-color: #000;
         padding-top: 46px;
+        margin-top: 44px;
     }
 
     >.formContainer {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
         align-items: center;
         justify-content: center;
         background-color: #000;
 
         >.formHeader {
             color: #00bc8f;
+            background-color: #000;
+            font-family: Overpass;
             font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 18px;
         }
 
-        span {
+        >.formSlogan {
             color: #fffcf3;
             background-color: #000;
+            font-family: Syne;
             text-decoration: none;
             font-size: 23px;
+            margin-bottom: 18px;
         }
     }
 }
