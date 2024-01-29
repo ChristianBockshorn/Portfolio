@@ -1,0 +1,43 @@
+section {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+    >.leftColumn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: black;
+
+        >.logo {
+            height: 74px;
+
+        }
+
+        span {
+            font-family: Overpass;
+            color: #fffcf3;
+            background-color: #000;
+        }
+    }
+
+    >.rightColumn {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+
+        img {
+            background-color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: Overpass;
+            color: #fffcf3;
+            background-color: #000;
+        }
+    }
+}

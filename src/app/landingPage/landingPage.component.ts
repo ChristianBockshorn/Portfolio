@@ -6,6 +6,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -18,6 +19,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MySkillsComponent,
     PortfolioSectionComponent,
     ContactFormComponent,
+    FooterComponent,
     
   ],
   templateUrl: './landingPage.component.html',
