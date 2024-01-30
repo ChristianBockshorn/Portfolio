@@ -1,40 +1,54 @@
 section {
     padding: 30px 100px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
     background-color: black;
 
-    >.leftColumn {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-        background-color: black;
-
-        >.logo {
-            height: 74px;
-
-        }
-
-        span {
-            font-family: Overpass;
-            color: #fffcf3;
-            background-color: #000;
-        }
-    }
-
-    >.rightColumn {
-        display: flex;
-        flex-direction: column;
+    a {
+        text-decoration: none;
+        font-family: Overpass;
+        color: #fffcf3;
         background-color: #000;
 
         img {
             background-color: #000;
         }
+    }
 
-        a {
-            text-decoration: none;
+    >.TopContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+
+        >.logo {
+            height: 74px;
+        }
+
+        >.icons {
+            display: flex;
+            gap: 30px;
+            background-color: #000;
+
+            a {
+                transition: all .3s ease;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    >.bottomContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+
+        span {
             font-family: Overpass;
             color: #fffcf3;
             background-color: #000;
