@@ -3,12 +3,29 @@
     <div class="formContainer">
         <span class="formHeader">Want to discuss a new project?</span>
         <span class="formSlogan">Say hello! let's discuss your ideas and make it happen</span>
-        
-        <form action="http://f0155033@christian-bockshorn.developerakademie.net/send_mail/send_mail.php" method="post">
-            <input type="text" name="name">
-            <input type="email" name="email">
-            <textarea type="text" name="message"></textarea>
-            <button>Send Message</button>
+
+        <form (submit)="sendMail()" ngNativeValidate #myForm>
+            <div class="input-container">
+                <input required name="name" placeholder="Your Name" type="text" #nameField />
+            </div>
+            <div class="input-container">
+                <input required type="email" placeholder="Your Email" name="email" #emailField />
+            </div>
+            <div class="input-container">
+                <textarea required name="message" placeholder="Your Message" id="" cols="30" rows="10"
+                    #messageField></textarea>
+            </div>
+
+            <div class="checkboxContainer">
+                <label class="container">I've read the <a id="privacyPolicy" href="#">privacy policy</a> and agree
+                    to the processing of my data as outlined.
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <button #sendButton>Send Message</button>
         </form>
+
     </div>
 </section>
