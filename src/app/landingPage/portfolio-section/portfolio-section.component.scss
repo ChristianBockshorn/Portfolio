@@ -6,22 +6,85 @@ section {
     flex-direction: column;
     gap: 25px;
     margin-top: 200px;
+    
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 
     >.headline {
         font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+        margin: -34px;
+        padding-left: 15px;
+        padding-right: 15px;
 
         &:hover {
             color: #00bc8f;
         }
     }
 
-    p {
-        color: #000;
-        font-family: Overpass;
-        font-size: 23px;
+    >.mainContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 25px;
 
-        font-weight: 400;
-        line-height: 120%;
-        max-width: 492px;
+
+        >.leftColumn {
+            img {
+                width: 100%;
+                border-radius: 8px;
+                border: 3px solid transparent;
+
+                &:hover {
+                    border: 3px solid black;
+                }
+            }
+        }
+
+        >.rightColumn {
+            display: flex;
+            flex-direction: column;
+
+            >.headlineProject {
+                font-size: clamp(1.8125rem, 1.0625rem + 2.75vw, 3.875rem);
+                font-family: Syne;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 100%;
+                letter-spacing: 0.78px;
+
+                &:hover {
+                    color: #00bc8f;
+                }
+            }
+        }
+
+        .programmingLang {
+            color: #00bc8f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: #000;
+            font-family: Overpass;
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 120%;
+            max-width: 492px;
+        }
+
+        p {
+            color: #000;
+            font-family: Overpass;
+            font-size: 23px;
+
+            font-weight: 400;
+            line-height: 120%;
+            max-width: 492px;
+        }
     }
 }

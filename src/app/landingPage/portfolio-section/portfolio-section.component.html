@@ -1,6 +1,24 @@
 <section>
     <span class="headline">Portfolio</span>
     <p>This page is a sample of my work - please feel free to try them out.</p>
-</section>
 
-<app-projekt-el-pollo-loco></app-projekt-el-pollo-loco>
+    <div *ngFor="let project of projects; let i = index" class="mainContainer" [ngClass]="{'row-reverse': i % 2 == 1}">
+        <div class="leftColumn">
+            <img [src]="project.img">
+            <div class="imageBorder"></div>
+        </div>
+
+        <div class="rightColumn">
+            <span class="headlineProject">{{ project.name }}</span>
+            <p class="programmingLang">{{ project.usedTech }}</p>
+            <p>{{ project.description }}</p>
+
+            <div>
+                <a [href]="project.gitHubURL" target="_blank" id="btn">GitHub</a>
+                <a [href]="project.liveTestURL" target="_blank" id="btn">Live Test</a>
+            </div>
+        </div>
+
+        <div class="counter">{{ (i + 1).toString().padStart(2, '0') }}/{{ projects.length | number:'2.0-0' }}</div>
+    </div>
+</section>
