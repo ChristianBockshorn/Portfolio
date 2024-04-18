@@ -17,7 +17,7 @@ export class PortfolioSectionComponent {
       'name': 'El Pollo Loco',
       'usedTech': 'JavaScript | HTML | CSS | OOP',
       'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.',
-      'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/El-Pollo-Loco-2D-Game',
       'liveTestURL': ''
     },
     {
@@ -25,15 +25,15 @@ export class PortfolioSectionComponent {
       'name': 'Pokédex',
       'usedTech': 'JavaScript | HTML | CSS | API',
       'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      'gitHubURL': 'https://github.com/GDR1909/Pokedex',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/Pokedex-API',
       'liveTestURL': ''
     },
     {
       'img': './assets/img/Project-img/join.png',
       'name': 'Join',
-      'usedTech': 'JavaScript | HTML | CSS',
+      'usedTech': 'JavaScript | HTML | CSS | Figma',
       'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      'gitHubURL': 'https://github.com/GDR1909/Join',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/JOIN-46',
       'liveTestURL': ''
     },
     {
@@ -41,7 +41,7 @@ export class PortfolioSectionComponent {
       'name': 'Portfolio',
       'usedTech': 'Angular | Typescript | SCSS',
       'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      'gitHubURL': 'https://github.com/GDR1909/Join',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/Portfolio',
       'liveTestURL': ''
     }
   ];
