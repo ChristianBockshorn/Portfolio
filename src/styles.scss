@@ -17,27 +17,27 @@
 }
 
 #btn {
-  margin: 64px;
   padding: 20px 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border: 4px solid #000;
-  border-radius: 8px;
   box-shadow: 5px 5px 15px #00000026;
   font-family: Overpass;
   font-size: 23px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 120%;
   white-space: nowrap;
   display: inline-flex;
   cursor: pointer;
   transition: transform .3s ease, background-color .3s ease, color .3s ease;
+  margin: 64px 64px 0 0;
 
   &:hover {
-    font-weight: 800;
-    transform: scaleX(1.2);
+    font-weight: 600;
+    color: #fffcf3;
+    background-color: #000000b7;
   }
 }
 
@@ -49,12 +49,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:  #fffcf3; 
+  background: #fffcf3;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: black;
 }
 
 
