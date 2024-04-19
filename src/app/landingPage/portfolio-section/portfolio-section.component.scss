@@ -7,17 +7,25 @@ section {
     padding: 30px 100px;
     margin-top: 200px;
 
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+
 
     a {
         text-decoration: none;
         color: #000;
     }
 
+    p {
+        margin: 30px 0;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+    }
+
     >.headline {
         font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
-        margin: -34px;
-        padding-left: 15px;
-        padding-right: 15px;
 
         &:hover {
             color: #00bc8f;
@@ -32,9 +40,26 @@ section {
         gap: 20px;
         position: relative;
 
+        .imageBorder {
+            height: 100%;
+            width: 100%;
+            border: solid 3px black;
+            position: absolute;
+            opacity: 0;
+            border-radius: 8px;
+            transition: all ease-in-out .25s;
+            background-color: transparent;
+
+            >.portfolioArrow{
+                width: 150px;
+                height: 150px;
+            }
+        }
+
         &:hover {
             .projectPreview img {
                 filter: grayscale(0%);
+
                 transition: all ease-in-out 500ms;
             }
 
@@ -42,6 +67,7 @@ section {
                 translate: 0%;
                 opacity: 1;
                 transition: all ease-in-out 750ms, opacity 750ms;
+                background-color: transparent;
             }
 
             .imageBorder {
@@ -64,16 +90,10 @@ section {
                 object-fit: cover;
                 filter: grayscale(100%);
                 transition: all ease-in-out .5s;
+                border-radius: 8px;
             }
 
-            .imageBorder {
-                height: 100%;
-                width: 100%;
-                border: solid 3px black;
-                position: absolute;
-                opacity: 0;
-                transition: all ease-in-out .25s;
-            }
+
         }
 
 
@@ -83,11 +103,13 @@ section {
             translate: -100%;
             opacity: 0;
             transition: all ease-in-out .75s, opacity .75s;
+            background-color: transparent;
 
             >h3 {
                 font-size: 40px;
                 font-family: Syne;
                 font-weight: 800;
+                background-color: transparent;
 
                 &:hover {
                     color: #00bc8f;
@@ -103,6 +125,11 @@ section {
                 margin-bottom: 10px;
                 line-height: 120%;
                 max-width: 492px;
+                background-color: transparent;
+            }
+
+            .projectBtn {
+                background-color: transparent;
             }
         }
 
@@ -113,6 +140,9 @@ section {
             position: absolute;
             top: 0;
             right: 0;
+            background-color: transparent;
+            margin-bottom: 100px;
+             
         }
 
         p {
