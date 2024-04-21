@@ -13,22 +13,6 @@ import { CommonModule } from '@angular/common';
 export class PortfolioSectionComponent {
   projects = [
     {
-      'img': './assets/img/Project-img/ElPolloLoco.png',
-      'name': 'El Pollo Loco',
-      'usedTech': 'JavaScript | HTML | CSS | OOP',
-      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.',
-      'gitHubURL': 'https://github.com/ChristianBockshorn/El-Pollo-Loco-2D-Game',
-      'liveTestURL': ''
-    },
-    {
-      'img': './assets/img/Project-img/pokedex.png',
-      'name': 'Pokédex',
-      'usedTech': 'JavaScript | HTML | CSS | API',
-      'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      'gitHubURL': 'https://github.com/ChristianBockshorn/Pokedex-API',
-      'liveTestURL': ''
-    },
-    {
       'img': './assets/img/Project-img/join.png',
       'name': 'Join',
       'usedTech': 'JavaScript | HTML | CSS | Figma',
@@ -37,9 +21,25 @@ export class PortfolioSectionComponent {
       'liveTestURL': ''
     },
     {
+      'img': './assets/img/Project-img/ElPolloLoco.png',
+      'name': 'El Pollo Loco',
+      'usedTech': 'JavaScript | HTML | CSS | OOP',
+      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/El-Pollo-Loco-2D-Game',
+      'liveTestURL': 'https://christian-bockshorn.developerakademie.net/ElPolloLoco/index.html'
+    },
+    {
+      'img': './assets/img/Project-img/pokedex.png',
+      'name': 'Pokédex',
+      'usedTech': 'JavaScript | HTML | CSS | API',
+      'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'gitHubURL': 'https://github.com/ChristianBockshorn/Pokedex-API',
+      'liveTestURL': 'https://christian-bockshorn.developerakademie.net/Pokedex'
+    },
+    {
       'img': './assets/img/Project-img/join.png',
       'name': 'Portfolio',
-      'usedTech': 'Angular | Typescript | SCSS',
+      'usedTech': 'Angular | Typescript | HTML | SCSS | Figma',
       'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Portfolio',
       'liveTestURL': ''

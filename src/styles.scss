@@ -33,11 +33,12 @@
   cursor: pointer;
   transition: transform .3s ease, background-color .3s ease, color .3s ease;
   margin: 64px 64px 0 0;
+  border-radius: 8px;
 
   &:hover {
     font-weight: 600;
     color: #fffcf3;
-    background-color: #000000b7;
+    background-color: #000000;
   }
 }
 
