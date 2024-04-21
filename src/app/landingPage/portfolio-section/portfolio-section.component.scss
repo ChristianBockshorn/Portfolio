@@ -1,16 +1,10 @@
 section {
-
     display: flex;
     align-items: stretch;
     justify-content: center;
     flex-direction: column;
     padding: 30px 100px;
     margin-top: 200px;
-
-    .row-reverse {
-        flex-direction: row-reverse;
-    }
-
 
     a {
         text-decoration: none;
@@ -54,13 +48,9 @@ section {
                 width: 50px;
                 height: 50px;
                 background-color: transparent;
-
                 position: absolute;
-                // z-index: 10;
                 right: -4.5%;
                 bottom: 40%;
-                
-                
             }
         }
 
@@ -84,12 +74,23 @@ section {
                 transition: all ease-in-out 250ms;
             }
 
-            .portfolioArrow{
+            .portfolioArrow {
                 transform: rotate(90deg);
                 transition: all ease-in-out 250ms;
             }
         }
 
+        &.row-reverse {
+            flex-direction: row-reverse;
+
+            &:hover {
+                .portfolioArrow {
+                    left: -4.5%;
+                    transition: all ease-in-out 250ms;
+                    transform: rotate(-180deg);
+                }
+            }
+        }
 
         .projectPreview {
             display: flex;
@@ -105,8 +106,6 @@ section {
                 transition: all ease-in-out .5s;
                 border-radius: 8px;
             }
-
-
         }
 
 
@@ -155,7 +154,6 @@ section {
             right: 0;
             background-color: transparent;
             margin-bottom: 100px;
-
         }
 
         p {

@@ -5,13 +5,13 @@
     <div *ngFor="let project of projects; let i = index" class="mainContainer" [ngClass]="{'row-reverse': i % 2 == 1}">
         <div class="projectPreview">
             <img [src]="project.img">
-            <div class="imageBorder">
+            <div class="imageBorder ">
                 <img class="portfolioArrow" src="./assets/img/portfolioArrow.png">
             </div>
         </div>
 
 
-        <div class="counter row-reverse">
+        <div class="counter">
             {{ (i + 1).toString().padStart(2, '0') }}/{{ projects.length | number:'2.0-0' }}
         </div>
 
