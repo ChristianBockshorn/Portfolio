@@ -4,14 +4,187 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-    
+
 
     >.logo {
         height: 74px;
-        
+
     }
 
     >img {
         height: 30px;
     }
+
+    .burgerMenu {
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navContent {
+
+    background-color: #fffcf3;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.navMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.navFooter {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 100px;
+    margin-top: 200px;
+    background-image: url('./../../../assets/img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.navRectangle {
+    width: 100%;
+}
+
+.navHeader {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+
+
+    >.logo {
+        height: 74px;
+    }
+
+    >img {
+        height: 30px;
+    }
+
+    .burgerMenu {
+        cursor: pointer;
+    }
+}
+
+.headlineNav {
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.78px;
+    position: relative;
+
+    &:hover {
+        .verticalLine {
+            height: 0px;
+        }
+
+        .horizontalLine {
+            width: 50%;
+            left: 50%;
+            transition: width .25s ease .15s, left .25s ease .25s;
+        }
+    }
+}
+
+.headlineFooter {
+    color: #fffcf3;
+    background-color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.78px;
+    margin-top: 50px;
+}
+
+.headlineMail {
+    font-family: Overpass;
+    font-size: 23px;
+    line-height: 100%;
+    color: #fffcf3;
+    background-color: #000;
+    margin-top: 50px;
+
+}
+
+.TopContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: -webkit-fill-available;
+    margin-top: 50px;
+
+    >.logoNavFooter {
+        height: 74px;
+        background-color: #000;
+    }
+
+    >.icons {
+        display: flex;
+        gap: 30px;
+        background-color: #000;
+
+        .logoIcons {
+            background-color: #000;
+            height: 30px;
+        }
+
+        a {
+            background-color: #000;
+            transition: all .3s ease;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.verticalLine {
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    background-color: #000;
+    margin-left: -10%;
+    bottom: -20px;
+    transition: height .25s ease;
+}
+
+
+.horizontalLine {
+    position: absolute;
+    height: 4px;
+    width: 10%;
+    bottom: -20px;
+    background-color: #000;
+    margin-left: -10%;
+    left: 0;
+    transition: width .15s ease, left .15s ease;
 }

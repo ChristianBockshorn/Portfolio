@@ -1,4 +1,47 @@
 <header>
     <img class="logo" src="./../../../assets/icon/logo/Blacklogo.png">
-    <img src="./../../../assets/img/burger.png">
+    <img class="burgerMenu" (click)="openNav()" src="./../../../assets/img/burger.png">
 </header>
+
+<div *ngIf="isNavOpen" class="navContent slide-up">
+    <div class="navHeader">
+        <img class="logo" src="./../../../assets/icon/logo/Blacklogo.png">
+        <img class="burgerMenu" (click)="openNav()" src="./../../../assets/img/close.png">
+    </div>
+
+    <div class="navMain ">
+        <a (click)="openNav()" class="headlineNav" href="#aboutMe">
+            About Me
+            <div class="verticalLine"></div>
+            <div class="horizontalLine"></div>
+        </a>
+        <a (click)="openNav()" class="headlineNav" href="#mySkills">
+            My Skills
+            <div class="verticalLine"></div>
+            <div class="horizontalLine"></div>
+        </a>
+        <a (click)="openNav()" class="headlineNav" href="#projects">
+            Portfolio
+            <div class="verticalLine"></div>
+            <div class="horizontalLine"></div>
+        </a>
+    </div>
+
+    <div class="navFooter">
+        <span class="headlineFooter">Say Hi!</span>
+        <span><a class="headlineMail" href="mailto:bockshorn@gmx.net" id="mail">bockshorn&#64;gmx.net</a></span>
+
+        <div class="TopContainer">
+            <img class="logoNavFooter" src="./../../../assets/icon/logo/whiteLogo.png">
+            <div class="icons">
+                <a href="https://github.com/ChristianBockshorn">
+                    <img class="logoIcons" src="./../../../assets/icon/github.png"></a>
+                <a href="mailto:bockshorn@gmx.net"><img class="logoIcons" src="./../../../assets/icon/email.png"></a>
+                <a href="https://www.linkedin.com/in/christian-bockshorn/"><img class="logoIcons"
+                        src="./../../../assets/icon/linkedin.png"></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
