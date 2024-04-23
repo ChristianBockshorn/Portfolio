@@ -98,6 +98,8 @@ a {
     position: relative;
 
     &:hover {
+        color: #00bc8f;
+
         .verticalLine {
             height: 0px;
         }
