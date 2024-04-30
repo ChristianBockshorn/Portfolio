@@ -34,7 +34,7 @@ export class PortfolioSectionComponent {
       'usedTech': 'JavaScript | HTML | CSS | API',
       'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Pokedex-API',
-      'liveTestURL': 'https://christian-bockshorn.developerakademie.net/Pokedex'
+      'liveTestURL': 'https://pokedex-api.christian-bockshorn.de'
     },
     {
       'img': './assets/img/Project-img/join.png',
