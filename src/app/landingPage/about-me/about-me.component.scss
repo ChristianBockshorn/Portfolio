@@ -1,63 +1,83 @@
 section {
-    padding: 30px 100px;
-    margin-top: 300px;
+   padding: 30px 100px;
+   margin-top: 300px;
 
-    a {
-        text-decoration: none;
-        color: #000;
-    }
+   a {
+      text-decoration: none;
+      color: #000;
+   }
 
-    .twoColumns {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: start;
-        gap: 45px;
+   .twoColumns {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: start;
+      gap: 45px;
 
 
-        >.leftCol {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: start;
+      >.leftCol {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: start;
 
-            >.headline {
-                font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
-                margin-bottom: 52px;
+         >.headline {
+            font-size: clamp(2.8125rem, 2.0625rem + 3.75vw, 4.875rem);
+            margin-bottom: 52px;
 
-                &:hover {
-                    color: #00bc8f;
-                }
+            &:hover {
+               color: #00bc8f;
             }
+         }
 
-            >#aboutMeText {
-                color: #000;
-                font-family: Overpass;
-                font-size: 23px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 120%;
+         >#aboutMeText {
+            color: #000;
+            font-family: Overpass;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+         }
+      }
+
+      >.rightCol {
+         display: flex;
+         justify-content: flex-end;
+         align-items: end;
+
+
+         >.imgDiv {
+            >img {
+               border-radius: 8px;
+               background: #e0e0e0;
+               box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+
+               width: 650px;
+
             }
-        }
+         }
 
-        >.rightCol {
-            display: flex;
-            justify-content: flex-end;
-            align-items: end;
+      }
+   }
 
+   @media screen and (max-width: 1040px) {
+      #btn {
+         margin: 80px 0px 0px 0px;
+      }
 
+      .twoColumns {
+         flex-direction: column;
+         align-items: center;
+
+         >.rightCol {
             >.imgDiv {
-                >img {
-                    border-radius: 8px;
-                    background: #e0e0e0;
-                    box-shadow: 20px 20px 60px #bebebe,
-                        -20px -20px 60px #ffffff;
-
-                    width: 650px;
-
-                }
+               >img {
+                  width: 90vw;
+               }
             }
+         }
+      }
 
-        }
-    }
+   }
 }
