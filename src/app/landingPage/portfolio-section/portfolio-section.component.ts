@@ -37,12 +37,13 @@ export class PortfolioSectionComponent {
       'liveTestURL': 'https://pokedex-api.christian-bockshorn.de'
     },
     {
-      'img': './assets/img/Project-img/join.png',
+      'img': './assets/img/portfolio.png',
       'name': 'Portfolio',
       'usedTech': 'Angular | Typescript | HTML | SCSS | Figma',
-      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      'description': 'My portfolio is a digital presentation of my work and skills, showing my expertise and creativity at a glance.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Portfolio',
-      'liveTestURL': ''
+      // 'liveTestURL': ''
     }
   ];
+Portfolio: any;
 }
