@@ -1,40 +1,47 @@
 section {
-    padding: 30px 100px;
-    height: 80vh;
-    
+   padding: 30px 100px;
+   height: 80vh;
+
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 
-   
 
-    .name {
-        margin-top: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 80%;
-        white-space: nowrap;
-        max-width: 950px;
-        color: #00bc8f;
-        text-align: center;
-        font-family: Overpass;
-        font-size: clamp(1.4375rem, .8693rem + 2.8409vw, 3rem);
-        font-style: normal;
-        font-weight: 700;
-        line-height: 100%;
-        letter-spacing: -1.2px;
-    }
+
+   .name {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 80%;
+      white-space: nowrap;
+      max-width: 950px;
+      color: #00bc8f;
+      text-align: center;
+      font-family: Overpass;
+      font-size: clamp(1.4375rem, .8693rem + 2.8409vw, 3rem);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -1.2px;
+   }
 }
 
 #line {
-    background-color: #000;
-    height: 3px;
-    width: 100%;
-    margin-right: 8px;
+   background-color: #000;
+   height: 3px;
+   width: 100%;
+   margin-right: 8px;
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+     margin-top: 150px;
+
+  }
 }
