@@ -185,4 +185,24 @@ section {
             max-width: 492px;
         }
     }
+
+    @media screen and (max-width: 1500px) {
+      .projectInformation {
+         margin-left: 100px;
+      }
+
+      .projectBtn {
+         display: flex;
+      }
+    }
+
+    @media screen and (max-width: 1380px) {
+      .projectInformation {
+         margin-left: 50px;
+      }
+
+      .projectBtn {
+         display: flex;
+      }
+    }
 }
