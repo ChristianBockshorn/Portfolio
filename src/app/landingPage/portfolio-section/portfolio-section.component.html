@@ -16,9 +16,9 @@
       </div>
 
       <div class="projectInformation">
-         <h3>{{ project.name }}</h3>
-         <span>{{ project.usedTech }}</span>
-         <span style="color: #000;">{{ project.description }}</span>
+         <h3 class="forMobile">{{ project.name }}</h3>
+         <span class="forMobile">{{ project.usedTech }}</span>
+         <span class="forMobile" style="color: #000;">{{ project.description }}</span>
 
          <div class="projectBtn">
             <a [href]="project.gitHubURL" target="_blank" id="btn">GitHub</a>

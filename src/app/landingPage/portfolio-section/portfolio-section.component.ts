@@ -39,7 +39,7 @@ export class PortfolioSectionComponent {
     {
       'img': './assets/img/portfolio.png',
       'name': 'Portfolio',
-      'usedTech': 'Angular | Typescript | HTML | SCSS | Figma',
+      'usedTech': 'Angular | Typescript | SCSS',
       'description': 'My portfolio is a digital presentation of my work and skills, showing my expertise and creativity at a glance.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Portfolio',
       // 'liveTestURL': ''
