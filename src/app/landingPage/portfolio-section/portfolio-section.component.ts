@@ -32,14 +32,14 @@ export class PortfolioSectionComponent {
       'img': './assets/img/Project-img/pokedex.png',
       'name': 'Pokédex',
       'usedTech': 'JavaScript | HTML | CSS | API',
-      'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'description': 'Based on the PokéAPI, a simple library that provides and catalogues pokemon information.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Pokedex-API',
       'liveTestURL': 'https://pokedex-api.christian-bockshorn.de'
     },
     {
       'img': './assets/img/portfolio.png',
       'name': 'Portfolio',
-      'usedTech': 'Angular | Typescript | SCSS',
+      'usedTech': 'Angular | TypeScript  | SCSS',
       'description': 'My portfolio is a digital presentation of my work and skills, showing my expertise and creativity at a glance.',
       'gitHubURL': 'https://github.com/ChristianBockshorn/Portfolio',
       // 'liveTestURL': ''
